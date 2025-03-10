@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  
+}
+.container {
+  background: linear-gradient(to top, #33ccff 0%, #ffcc00 100%);
+
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 800px;
+  height: 450px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333333;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.city{
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+
+}
+
+
+hover.input{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#weatherResult {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#code{
+  margin-top: 5px;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#description{
+  margin-top: 5px;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#wind{
+  margin-top: 5px;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#error {
+  color: red;
+}
+
+/* Media Queries for Phones */
+@media (max-width: 599px) {
+  .container {
+      width: 95%;
+      padding: 15px;
+  }
+
+  input, button {
+      max-width: 100%;
+  }
+
+  #weatherResult, #code, #description, #wind {
+      font-size: 1em;
+  }
+}
+
+/* Media Queries for Tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container {
+      width: 80%;
+      max-width: 600px;
+  }
+}
+
+/* Media Queries for Desktops */
+@media (min-width: 1025px) {
+  .container {
+      width: 70%;
+      max-width: 800px;
+  }
+}
